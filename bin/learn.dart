@@ -1,5 +1,5 @@
 import 'dart:io';
-
+import './funcations.dart';
 void main()
 {
   // print('Enter Your Name');
@@ -72,5 +72,29 @@ void main()
     "age":30
   };
   print(objects);
+
+  sum();
+  sumParams(10, 10);
+  var s = sumReturn(10, 40);
+  print(s);
+  sumReq(firstNum: 10, secondNum: 20,third: 0);
+  sumRequest(firstNum: 30, secondNum: 40);
+  sumRuquired(10, 43, sumParams);
+
+  // Anonymous Function
+  sumRuquired(31,42,(int a,int b){
+    print('value is ${a + b}');
+  });
+
+  // Future Function Call
+
+  sumFuture(20, 40);
+  print('After Future');
+
+  // Delayed Future Function
+  // SumFutureFun(50, 80);
+
+  // Delayed sum
+  example();  
 }
 
